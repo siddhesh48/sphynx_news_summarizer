@@ -1,5 +1,5 @@
-📰 AI News Summarizer (Tkinter-Based Desktop App)
-👥 Group Members
+AI News Summarizer (Tkinter-Based Desktop App)
+
 Siddhesh Tripathi – ku2407u378
 
 Rehan Khan – ku2407u363
@@ -10,7 +10,7 @@ Niyati Joshi – ku2407u342
 
 Nidhi Kotian – ku2407u339
 
-🎯 Objective
+ Objective
 The objective of the AI News Summarizer desktop application is to:
 
 Enable users to fetch real-time news on a chosen topic.
@@ -19,7 +19,7 @@ Use advanced NLP techniques to summarize lengthy articles into concise, readable
 
 Provide a simple and intuitive Graphical User Interface (GUI) using Tkinter for easy interaction.
 
-🚀 Core Features
+ Core Features
 Real-Time Article Fetching
 Utilizes the NewsAPI to retrieve the top 5 most relevant news articles based on user-defined topics.
 
@@ -41,7 +41,7 @@ Scrollable output area for displaying summaries
 Robust Error Handling
 Detects and displays user-friendly messages for issues like empty input, API errors, or missing article content.
 
-🛠️ Libraries & Tools Used
+ Libraries & Tools Used
 tkinter
 Purpose: Desktop GUI development.
 Function: Displays interface for input and output.
@@ -54,7 +54,7 @@ transformers (Hugging Face)
 Purpose: Natural Language Summarization.
 Function: Generates short summaries using the BART model.
 
-⚙️ Functional Components
+ Functional Components
 get_news_summary()
 Main logic function that:
 
@@ -72,7 +72,7 @@ NLP model from Hugging Face that summarizes long-form news content.
 Tkinter GUI
 Provides a clean and interactive interface for users to input a topic and read the summarized news.
 
-💡 Future Enhancements (Optional Features)
+ Future Enhancements (Optional Features)
 Export Functionality: Save summaries as .txt or .pdf files.
 
 Category Filtering: Support for multiple news categories (e.g., Politics, Sports).
