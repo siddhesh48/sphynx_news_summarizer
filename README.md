@@ -83,6 +83,6 @@ Visualization Tools: Add word clouds or summary metrics using matplotlib or seab
 
 Improved UX: Loading indicators, progress bars, and threading to prevent freezing.
 
-📌 Conclusion
+ Conclusion
 The AI News Summarizer is a smart, intuitive tool designed to revolutionize how users consume news. With the power of real-time article fetching and AI-driven summarization, it offers concise, digestible content in seconds. The Tkinter-based interface ensures accessibility and ease of use, while the foundation is built to support future scalability and enhancements.
 
