@@ -1,101 +1,88 @@
-﻿ Sphynx News Summarizer
-Group Members:
+📰 AI News Summarizer (Tkinter-Based Desktop App)
+👥 Group Members
+Siddhesh Tripathi – ku2407u378
 
-Siddhesh Tripathi - ku2407u378
+Rehan Khan – ku2407u363
 
-Rehan Khan - ku2407u363
+Niraj Matai – ku2407u341
 
-Niraj Matai - ku2407u341
+Niyati Joshi – ku2407u342
 
-Niyati Joshi - ku2407u342
+Nidhi Kotian – ku2407u339
 
-Nidhi Kotian - ku2407u339
+🎯 Objective
+The objective of the AI News Summarizer desktop application is to:
 
-Objective
-The objective of the AI News Summarizer project is to:
+Enable users to fetch real-time news on a chosen topic.
 
-Summarize News Articles: Use natural language processing (NLP) techniques to condense long-form news articles into concise summaries.
+Use advanced NLP techniques to summarize lengthy articles into concise, readable summaries.
 
-Visualize Summary Quality: Provide a visual representation (e.g., a score or word cloud) to evaluate the quality of the generated summaries.
+Provide a simple and intuitive Graphical User Interface (GUI) using Tkinter for easy interaction.
 
-Multi-Category Support: Summarize articles across various categories (e.g., Politics, Technology, Sports, Health) to cater to different interests.
+🚀 Core Features
+Real-Time Article Fetching
+Utilizes the NewsAPI to retrieve the top 5 most relevant news articles based on user-defined topics.
 
-User Customization: Allow users to choose the length of the summary (short, medium, detailed).
+AI-Based Summarization
+Leverages the Hugging Face Transformers library with the BART (facebook/bart-large-cnn) model to generate concise summaries of news content.
 
-Real-Time News Fetching: Integrate with news APIs (e.g., NewsAPI, Google News) to fetch the latest articles and summarize them in real-time.
+Dynamic Summary Length
+Adjusts the summary length dynamically based on the input size, ensuring meaningful and readable output.
 
-Export Summaries: Enable users to save the summaries for later use or share them across platforms.
+User-Friendly GUI
+Built using Tkinter, the application includes:
 
-Libraries Used
-pandas:
+Topic input field
 
-Purpose: Data handling and processing.
+Button to fetch and summarize news
 
-Functions: Reads and processes article data, handles missing or malformed content, stores summaries in DataFrames.
+Scrollable output area for displaying summaries
 
-newspaper3k:
+Robust Error Handling
+Detects and displays user-friendly messages for issues like empty input, API errors, or missing article content.
 
-Purpose: Web scraping for article extraction.
+🛠️ Libraries & Tools Used
+tkinter
+Purpose: Desktop GUI development.
+Function: Displays interface for input and output.
 
-Functions: Extracts clean article content (title, text, publication date) from the given URLs.
+newsapi-python
+Purpose: Real-time news fetching.
+Function: Retrieves relevant articles using NewsAPI.
 
-transformers (Hugging Face):
+transformers (Hugging Face)
+Purpose: Natural Language Summarization.
+Function: Generates short summaries using the BART model.
 
-Purpose: AI-based text summarization.
+⚙️ Functional Components
+get_news_summary()
+Main logic function that:
 
-Functions: Uses pre-trained models for automatic summarization (e.g., BART, T5).
+Retrieves articles from NewsAPI
 
-flask (or tkinter for GUI, if applicable):
+Combines and processes titles and descriptions
 
-Purpose: Web or desktop application creation.
+Generates summaries
 
-Functions: If a GUI is used, flask or tkinter will display summary results, take user input, and fetch articles dynamically.
+Displays results in the output area
 
-matplotlib/seaborn (optional for data visualization):
+summarizer Pipeline
+NLP model from Hugging Face that summarizes long-form news content.
 
-Purpose: Visualize summary metrics (e.g., word count comparison, summary length).
+Tkinter GUI
+Provides a clean and interactive interface for users to input a topic and read the summarized news.
 
-Functions: Create plots to analyze the effectiveness of different summarization strategies or to display summary distribution.
+💡 Future Enhancements (Optional Features)
+Export Functionality: Save summaries as .txt or .pdf files.
 
-Summary
-The AI News Summarizer is an interactive tool designed to fetch and summarize news articles using advanced NLP techniques. Here's a breakdown of the components:
+Category Filtering: Support for multiple news categories (e.g., Politics, Sports).
 
-Data Collection and Processing:
+Summary Length Options: Let users select between short, medium, and detailed summaries.
 
-fetch_news(url): Uses the newspaper3k library to scrape article content from the provided URL.
+Visualization Tools: Add word clouds or summary metrics using matplotlib or seaborn.
 
-clean_article(text): Cleans up the raw article text (removes ads, irrelevant content).
+Improved UX: Loading indicators, progress bars, and threading to prevent freezing.
 
-summarize_article(text): Uses Hugging Face’s transformers library to generate concise summaries of the article.
+📌 Conclusion
+The AI News Summarizer is a smart, intuitive tool designed to revolutionize how users consume news. With the power of real-time article fetching and AI-driven summarization, it offers concise, digestible content in seconds. The Tkinter-based interface ensures accessibility and ease of use, while the foundation is built to support future scalability and enhancements.
 
-User Interface (CLI or GUI):
-
-Article Input: The user provides a URL or searches for articles through an API integration.
-
-Customization Options: The user can select summary length (e.g., 100 words, 300 words) or target category (e.g., politics, tech).
-
-Summary Display: The program outputs the summarized article in a user-friendly format.
-
-Real-Time News Fetching (if applicable):
-
-Integrates with news APIs (e.g., NewsAPI) to fetch the latest articles on user-defined topics, such as technology, sports, etc.
-
-Error Handling:
-
-The program gracefully handles errors such as invalid URLs or failed API requests and provides user-friendly error messages.
-
-Optional Features:
-
-Word Cloud Visualization: Generates a word cloud of key terms in the summary.
-
-Export Functionality: Summaries can be saved as text files or shared via email or social media.
-
-User Experience Features:
-Real-Time Feedback: The user receives immediate feedback on the generated summary or when fetching articles.
-
-Customizable Settings: Allows the user to select how much information they want (short, detailed).
-
-Mobile/Desktop Accessibility: If using a GUI or web interface, ensures responsiveness for all screen sizes.
-
-Conclusion:
-This project aims to enhance how people consume news by providing an AI-powered tool that quickly summarizes articles and offers a concise version of the most important points. It supports a variety of categories, and the customizable features make it adaptable to different user preferences.
